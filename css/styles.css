@@ -1,0 +1,236 @@
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans&display=swap');
+
+/* Reset */
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+
+
+/* Navigation bar */
+
+header {
+    background-color: #B50F2D;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    display: flex;
+    justify-content: space-between; /* alineación en el eje primario: justify */
+}
+
+.header__logo {
+    display:flex;
+}
+
+.menu-nav {
+    display:flex;
+    align-items: center;  /* alineación en el eje secundario: align */
+}
+
+.menu-nav ul {
+    display: flex;
+}
+
+
+.menu-nav ul li {
+    list-style: none;
+    margin: 0px 10px;
+}
+
+nav ul li a{
+    color:#FFF1E0;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+a:hover {
+    color: white;
+}
+
+
+header h2 {
+    color:#FFF1E0;
+    font-family: 'Donegal One', serif;
+    font-size: 30px;
+    margin: 10px;
+}
+
+.button-white {
+    background-color: #FFF1E0;
+    color:#B50F2D;
+    padding: 10px 20px;
+    border-radius: 20px;
+    
+}
+
+.button-white:hover {
+    color: pink;
+}
+
+/* Main */
+
+body {
+    background-color: #FFF1E0;
+    color:#B50F2D;
+    font-family: 'DM Sans', sans-serif;
+}
+
+p, h1, h2 {
+    margin: 10px 20px;
+}
+
+
+/* Footer */
+
+footer {
+    background-color: #B50F2D;
+    position: relative;
+    bottom: 0;
+}
+
+
+footer ul {
+    display: flex;
+    justify-content: flex-end;
+}
+
+footer ul li {
+    margin: 10px 10px;
+}
+
+
+/* Página: ¿Quiénes somos? */
+
+.article-container {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+
+.article__text {
+    display:flex;
+    flex-direction: column;
+}
+
+
+.section-container {
+    display: flex;
+    justify-content: space-around;
+    margin: 30px;
+}
+
+.section__img {
+    display: flex;
+    flex-direction: column;
+}
+
+.section__img p {
+    padding: 10px;
+}
+
+.img-medium {
+    margin: 10px 20px;
+}
+
+.title--center {
+    text-align: center;
+    margin: 20px;
+}
+
+
+
+/* Página: Home */
+
+.titulo-home{
+    width: 400px
+}
+
+.img-home{
+    display: inline-block;
+    position: relative;
+    left: 35%;
+    bottom: 300px;
+}
+
+/* Página: Contacto */
+
+.datos-contacto {
+    margin: 20px 20px;
+}
+.datos-contacto fieldset {
+    padding: 20px 20px;
+}
+
+.datos-contacto fieldset form p {
+    margin: 10px 0px;
+}
+
+.datos-contacto fieldset form .button-pink {
+    background-color:#B50F2D;
+    color:#FFF1E0;
+    padding: 10px 20px;
+    margin: 0px 15px;
+    border-radius: 20px;
+    border-style: none;
+}
+
+
+/* Página: Pedir un turno */
+
+.titulo-central{
+    margin: 20px 20px;
+    width: 400px;
+    text-align: center;
+    position: relative;
+    left: 30%;
+}
+
+.titulo-central p {
+    margin: 20px 20px;
+}
+
+.titulo-central img {
+    margin: 50px 50px;
+}
+
+/* Página: Tratamientos */
+
+.tratamientos {
+    display:grid;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: repeat(1, 1fr);
+    grid-row-gap: 50px;
+    justify-items: center; 
+    margin: 50px;
+
+}
+
+
+.card {
+    display:flex;
+    justify-content: space-evenly;
+    background-color: #B50F2D;
+    color:white;
+}
+
+
+.card__text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px 20px;
+}
+
+.card__text h2 {
+    margin: 10px 10px;
+    font-size: 200%;
+}
+
+.card__text p{
+    margin: 15px 10px;
+    font-size: 100%;
+}
+
