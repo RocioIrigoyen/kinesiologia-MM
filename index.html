@@ -8,34 +8,90 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Donegal+One&display=swap" rel="stylesheet">
+    <!-- bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/styles.css">
     <title>Kinesiología MM</title>
 </head>
 <body>
 
     <header>
-        <div class="header__logo">
-            <img src="./imgs/Logo.png" alt="logo" width="70" height= auto>
-            <h2>Kinesiología</h2>
-        </div>
-        <nav class="menu-nav">
-            <ul>
-                <li><a href="./index.html">Home</a></li>
-                <li><a href="./pages/nosotros.html">¿Quiénes somos?</a></li>
-                <li><a href="./pages/tratamientos.html">Tratamientos</a></li>
-                <li><a href="./pages/contacto.html">Contacto</a></li>
-                <li><a class="button-white" href="./pages/pedirturno.html">Pedir un turno</a></li>
-                
-            </ul>
-        </nav> 
+        <nav class="navbar navbar-dark navbar-expand-lg" data-bs-theme="dark">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">
+                <div class="header__logo">
+                    <img src="./imgs/Logo.png" alt="logo" width="70" height= auto>
+                    <h2>Kinesiología</h2>
+                </div>
+              </a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="./index.html">Inicio</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./pages/nosotros.html">¿Quiénes somos?</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./pages/tratamientos.html">Tratamientos</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./pages/contacto.html">Contacto</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link button-white" href="./pages/pedirturno.html">Pedir un turno</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
     </header>
 
     <main>
         <div class="home__container">
-            <img class="img-home" src="./imgs/Rectangle 647.png" alt="masaje" width="850" height="auto"/>
+
+            <div id="carouselExampleFade" class="carousel slide carousel-fade">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="./imgs/Rectangle 647.png" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="./imgs/CAROUSEL 2.png" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="./imgs/CAROUSEL 3.png" class="d-block w-100" alt="...">
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+            </div>
             <h1 class="titulo-home">Cuando te atendés con profesionales de la salud, estás en buenas manos</h1>
             <p class="titulo-home">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ullam quibusdam, hic aliquam mollitia maxime similique aliquid earum iusto aut error nesciunt sequi nam possimus nulla, fuga eos accusantium! Doloremque modi aliquam, doloribus pariatur suscipit corrupti officiis rem, cupiditate eum ut ab animi enim! Ipsam minus nesciunt dolorum sunt consectetur sequi.</p>
         </div>
+
+        <section class="icon__container">
+            <div class="icon__item">
+                <img src="./imgs/degree.png" alt="diploma" width="100" height="100">
+                <h5>40 años de experiencia</h5>
+
+            </div>
+
+            <div class="icon__item">
+                <img src="./imgs/health.png" alt="salud" width="100" height="100">
+                <h5>Tratamientos personalizados al paciente</h5>
+            </div>
+
+
+        </section>
     </main>
    
 
@@ -49,7 +105,9 @@
         </ul>
     </footer>
 
-
+    <!-- bootstrap js -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js" integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD" crossorigin="anonymous"></script>
 
 </body>
 </html>

@@ -8,36 +8,86 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Donegal+One&display=swap" rel="stylesheet">
+    <!-- bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/styles.css">
     <title>Pedir un turno</title>
 </head>
 <body>
 
     <header>
-        <div class="header__logo">
-            <img src="../imgs/Logo.png" alt="logo" width="70" height= auto>
-            <h2>Kinesiología</h2>
-        </div>
-        <nav class="menu-nav">
-            <ul>
-                <li><a href="../index.html">Home</a></li>
-                <li><a href="./nosotros.html">¿Quiénes somos?</a></li>
-                <li><a href="./tratamientos.html">Tratamientos</a></li>
-                <li><a href="./contacto.html">Contacto</a></li>
-                <li><a class="button-white" href="./pedirturno.html">Pedir un turno</a></li>
-                
-            </ul>
-        </nav>
+        <nav class="navbar navbar-dark navbar-expand-lg" data-bs-theme="dark">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="../index.html">
+                <div class="header__logo">
+                    <img src="../imgs/Logo.png" alt="logo" width="70" height= auto>
+                    <h2>Kinesiología</h2>
+                </div>
+              </a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="../index.html">Inicio</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./nosotros.html">¿Quiénes somos?</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./tratamientos.html">Tratamientos</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./contacto.html">Contacto</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link button-white" href="./pedirturno.html">Pedir un turno</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
     </header>
 
     <main>
-        <div class="titulo-central">
-            <h1>Para pedir un turno, escribinos por WhatsApp</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda quo dolorum nostrum. Nihil beatae, asperiores illo provident corporis blanditiis rem?</p>
-            <a href="#"><img src="../imgs/whatsapp.png" alt="logo whatsapp"></a>
-        </div>
+        <div class="container">
 
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.818922559132!2d-58.4976619!3d-34.5834481!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb64f78c4167d%3A0x9d278508e6b3a101!2sGral.%20Jos%C3%A9%20Gervasio%20Artigas%20%26%20Av.%20Gral.%20Mosconi%2C%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1678914555058!5m2!1ses!2sar" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <div class="titulo-central row">
+                    <div class="titulo--texto col">
+                        <h1>Para pedir un turno, escribinos por WhatsApp</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda quo dolorum nostrum. Nihil beatae, asperiores illo provident corporis blanditiis rem?</p>
+                    </div>
+                    <div class="titulo--wapp col">
+                        <a href="#"><img src="../imgs/whatsapp.png" alt="logo whatsapp"></a>
+                    </div>
+            </div>
+
+
+
+            <div class="row">
+                <h3 class="title--center">Nuestro horarios</h3>
+                <aside class="col-sm-12 col-lg-6">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.818922559132!2d-58.4976619!3d-34.5834481!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb64f78c4167d%3A0x9d278508e6b3a101!2sGral.%20Jos%C3%A9%20Gervasio%20Artigas%20%26%20Av.%20Gral.%20Mosconi%2C%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1678914555058!5m2!1ses!2sar" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <h4>Consultorio "..." </h4>
+                    <p>Avenida Mosconi 555</p>
+                    <p>Viernes de 8 a 19hs</p>
+                </aside>
+    
+                <aside class="col-sm-12 col-lg-6">
+                     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3285.289948054932!2d-58.4595869!3d-34.5715293!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb5d9b7338e81%3A0xe0efcb20953d88f!2sAv.%20de%20los%20Incas%20%26%20Cap.%20Gral.%20Ram%C3%B3n%20Freire%2C%20C1426%20CABA!5e0!3m2!1ses!2sar!4v1679176154321!5m2!1ses!2sar" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                     <h4>Consultorio "..." </h4>
+                     <p>Avenida Los Incas 555</p>
+                     <p>Lunes a Jueves de 8 a 19hs</p>
+    
+                </aside>
+            </div>
+
+        </div>
+        
+
+
+
 
     </main>
 
@@ -52,5 +102,10 @@
         </ul>
     </footer>
 
+    
+    <!-- bootstrap js -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js" integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD" crossorigin="anonymous"></script>
+
 </body>
-</html>
+</htm

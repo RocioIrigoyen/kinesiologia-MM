@@ -10,44 +10,17 @@
 
 
 
-/* Navigation bar */
+/* Header */
 
 header {
     background-color: #6d3cc3;
     position: sticky;
     top: 0;
     z-index: 1;
-    display: flex;
-    justify-content: space-between; /* alineación en el eje primario: justify */
 }
 
 .header__logo {
     display:flex;
-}
-
-.menu-nav {
-    display:flex;
-    align-items: center;  /* alineación en el eje secundario: align */
-}
-
-.menu-nav ul {
-    display: flex;
-}
-
-
-.menu-nav ul li {
-    list-style: none;
-    margin: 0px 10px;
-}
-
-nav ul li a{
-    color:#FFF1E0;
-    font-size: 18px;
-    text-decoration: none;
-}
-
-a:hover {
-    color: white;
 }
 
 
@@ -56,6 +29,16 @@ header h2 {
     font-family: 'Donegal One', serif;
     font-size: 30px;
     margin: 10px;
+}
+
+
+.nav-link {
+    color:#FFF1E0;
+    font-size: 18px;
+}
+
+.nav-link:hover {
+    color: plum;
 }
 
 .button-white {
@@ -68,6 +51,10 @@ header h2 {
 
 .button-white:hover {
     color: pink;
+}
+
+.navbar-collapse {
+    justify-content: flex-end;
 }
 
 /* Main */
@@ -154,10 +141,26 @@ footer ul li {
 .titulo-home{
     width: 100%;
     text-align: center;
+    padding: 20px;
+    margin-bottom: 50px;
+    margin-top: 10px;
 }
 
-.img-home{
-    width: 100%
+.icon__container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center; 
+    margin-bottom: 50px;
+}
+
+.icon__item {
+     display: flex;
+    flex-direction:column;
+    align-items: center;
+}
+
+.carousel {
+    z-index: 0;
 }
 
 /* Página: Contacto */
@@ -193,19 +196,14 @@ footer ul li {
 /* Página: Pedir un turno */
 
 .titulo-central{
-    margin: 20px 20px;
-    width: 400px;
-    text-align: center;
-    position: relative;
-    left: 30%;
+    display:flex;
+    justify-content: space-evenly;
 }
 
-.titulo-central p {
-    margin: 20px 20px;
-}
+.titulo-texto {
 
-.titulo-central img {
-    margin: 50px 50px;
+    flex-direction: column;
+
 }
 
 /* Página: Tratamientos */
@@ -223,9 +221,11 @@ footer ul li {
 
 .card {
     display:flex;
+    flex-direction: row;
     justify-content: space-evenly;
     background-color: #FFF1E0;
     color:#442679;
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
 }
 
 
@@ -250,42 +250,14 @@ footer ul li {
 
 /* -Tablet */
 
-@media only screen and (min-width: 576px) and (max-width: 768px) {
-        /*tratamientos*/
-
-        .tratamientos {
-    
-            grid-template-rows: repeat(2, 1fr);
-            grid-template-columns: repeat(2, 1fr);
-            grid-column-gap: 10px;
-            grid-row-gap: 20px;
-            margin: 10px;
-        
-        }
-
-        .card {
-            flex-direction: column;
-        }
-}
+@media only screen and (min-width: 576px) and (max-width: 768px) {}
 
 /* -Mobile */
 
 @media only screen and (max-width: 576px) {
-    /* estilos generales: nav y home */
-    header{
-        flex-direction: column;
-        align-items: center;
-    }
-    .header__logo {
-        width: 90%;
-        justify-content: center;
-    }
-    nav ul li a {
-        font-size: 70%;
-    }
 
-    .menu-nav ul li {
-        margin: 0px 5px;
+    .button-white{
+        width: 30%;
     }
 
     /*quiénes somos*/
