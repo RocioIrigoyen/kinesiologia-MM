@@ -1,0 +1,42 @@
+h1 {
+    font-family: 'Donegal One', serif;
+}
+
+.datos-contacto {
+    margin: 20px 20px;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+.datos-contacto fieldset {
+    padding: 20px 20px;
+    background-color: #442679;
+    border: 1px solid;
+    border-radius: 20px;
+}
+
+fieldset form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+fieldset form p {
+    margin: 10px 0px;
+}
+
+
+.button-pink {
+    background-color:#6d3cc3;
+    color:#FFF1E0;
+    padding: 10px 20px;
+    margin: 0px 15px;
+    border-radius: 20px;
+    border-color: #FFF1E0;
+    border-style: outset;
+}
+.button-pink:hover {
+    color:#6d3cc3;
+    background-color: #FFF1E0;
+}

@@ -1,0 +1,37 @@
+
+.article-container {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+
+.article__text {
+    display:flex;
+    flex-direction: column;
+}
+
+
+.section-container {
+    display: flex;
+    justify-content: space-around;
+    margin: 30px;
+}
+
+.section__img {
+    display: flex;
+    flex-direction: column;
+}
+
+.section__img p {
+    padding: 10px;
+}
+
+.img-medium {
+    margin: 10px 20px;
+}
+
+.title--center {
+    text-align: center;
+    margin: 40px;
+    font-family: 'Donegal One', serif;
+}

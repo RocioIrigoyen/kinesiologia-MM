@@ -1,0 +1,180 @@
+
+@import "index";
+@import "nosotros";
+@import "contacto";
+@import "pedirturno";
+@import "tratamientos";
+@import "vars";
+
+/* Estilos generales */
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Donegal+One&display=swap');
+
+//Reset
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+
+header {
+    background-color: $violetaMM;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+
+    .navbar-collapse {
+        justify-content: flex-end;
+        .nav-link {
+            color:#FFF1E0;
+            font-size: 18px;
+            &:hover {
+                color: plum;
+            }
+        }
+        .button-white {
+            background-color: #FFF1E0;
+            color:#6d3cc3;
+            padding: 10px 20px;
+            border-radius: 20px;
+            &:hover {
+                color: pink;
+            }
+            
+        }
+    } 
+
+    .header__logo {
+        display:flex;
+        h2 {
+            color:#FFF1E0;
+            font-family: 'Donegal One', serif;
+            font-size: 30px;
+            margin: 10px;
+        }
+    }
+
+
+}
+
+
+body {
+    background-color: #6d3cc3;
+    color: #fffeff;
+    font-family: 'DM Sans', sans-serif;
+    p, h1, h2 {
+        margin: 10px 20px;
+    }
+}
+
+
+
+footer {
+    background-color: #6d3cc3;
+    position: relative;
+    bottom: 0;
+    border-top: 1px solid #9258f7;
+    ul {
+        display: flex;
+        justify-content: flex-end;
+        li {
+            margin: 10px 10px;
+            list-style: none;
+        }
+    }
+}
+
+
+
+/* Media queries */
+
+/* -Tablet */
+
+@media only screen and (min-width: 576px) and (max-width: 768px) {}
+
+/* -Mobile */
+
+@media only screen and (max-width: 576px) {
+
+    .button-white{
+        width: 30%;
+    }
+
+    /*quiénes somos*/
+
+    .section-container{
+        flex-direction: column;
+    }
+
+    .article__img {
+        width: 25%;
+    }
+
+    .article__p {
+        font-size: 12px;
+    }
+
+    .article__title {
+        font-size: 20px;
+    }
+
+    /*tratamientos*/
+
+    .card {
+        flex-direction: column;
+    }
+
+    /*contacto*/
+    .datos-contacto {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .datos-contacto img {
+        width: 80%;
+        margin: 10px 10px;
+    }
+
+
+
+    /*pedir un turno*/
+
+    .titulo-central {
+        flex-direction: column;
+        align-items: center;
+        width: 90%;
+    }
+
+    .ubicacion {
+        width: 90%;
+    }
+
+
+    .titulo-texto {
+        padding-right: 0;
+        padding-left: 0;
+    }
+
+    aside {
+        padding: 0;
+    }
+
+
+    .titulo--wapp {
+        width: 80%;
+    }
+
+    .titulo-turnos {
+        width: 80%;
+    }
+
+    /*footer*/
+
+    footer ul {
+        justify-content: center;
+    }
+
+
+}
