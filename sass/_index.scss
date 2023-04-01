@@ -3,33 +3,36 @@
     display:flex;
     flex-direction: column;
     align-items: center;
-}
-.titulo-home, .texto-home {
-    width: 100%;
-    text-align: center;
-    padding: 20px;
-    margin-bottom: 50px;
-    margin-top: 10px;
+    .carousel {
+        z-index: 0;
+    }
+    .texto-home {
+        width: 100%;
+        text-align: center;
+        padding: 20px;
+        margin-bottom: 50px;
+        margin-top: 10px;
+    }
+    .titulo-home {
+        @extend .texto-home;
+        font-family: 'Donegal One', serif;
+    }
 }
 
-.titulo-home {
-    font-family: 'Donegal One', serif;
-}
+
 
 .icon__container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     justify-items: center; 
     margin: 50px 50px;
+    .icon__item {
+        display: flex;
+        flex-direction:column;
+        align-items: center;
+        text-align: center;
+    }
 }
 
-.icon__item {
-    display: flex;
-    flex-direction:column;
-    align-items: center;
-    text-align: center;
-}
 
-.carousel {
-    z-index: 0;
-}
+

@@ -6,16 +6,17 @@
   flex-direction: column;
   align-items: center;
 }
-
-.titulo-home, .texto-home {
+.home__container .carousel {
+  z-index: 0;
+}
+.home__container .texto-home, .home__container .titulo-home {
   width: 100%;
   text-align: center;
   padding: 20px;
   margin-bottom: 50px;
   margin-top: 10px;
 }
-
-.titulo-home {
+.home__container .titulo-home {
   font-family: "Donegal One", serif;
 }
 
@@ -25,16 +26,11 @@
   justify-items: center;
   margin: 50px 50px;
 }
-
-.icon__item {
+.icon__container .icon__item {
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
-}
-
-.carousel {
-  z-index: 0;
 }
 
 .article-container {
@@ -42,8 +38,7 @@
   align-items: center;
   padding: 20px;
 }
-
-.article__text {
+.article-container .article__text {
   display: flex;
   flex-direction: column;
 }
@@ -53,17 +48,14 @@
   justify-content: space-around;
   margin: 30px;
 }
-
-.section__img {
+.section-container .section__img {
   display: flex;
   flex-direction: column;
 }
-
-.section__img p {
+.section-container .section__img p {
   padding: 10px;
 }
-
-.img-medium {
+.section-container .section__img .img-medium {
   margin: 10px 20px;
 }
 
@@ -73,45 +65,49 @@
   font-family: "Donegal One", serif;
 }
 
-h1 {
-  font-family: "Donegal One", serif;
-}
-
 .datos-contacto {
   margin: 20px 20px;
   width: 100%;
   display: flex;
   justify-content: space-evenly;
 }
-
 .datos-contacto fieldset {
+  display: flex;
+  flex-direction: column;
   padding: 20px 20px;
   background-color: #442679;
   border: 1px solid;
   border-radius: 20px;
 }
-
-fieldset form {
+.datos-contacto fieldset form {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  padding: 0 20px;
 }
-
-fieldset form p {
+.datos-contacto fieldset form label {
+  padding: 10px 0;
+}
+.datos-contacto fieldset form input {
+  margin: 10px 0;
+}
+.datos-contacto fieldset form p {
   margin: 10px 0px;
 }
-
-.button-pink {
+.datos-contacto fieldset form .btn-formulario {
+  display: flex;
+  justify-content: space-evenly;
+}
+.datos-contacto fieldset form .btn-formulario .button-pink {
   background-color: #6d3cc3;
   color: #FFF1E0;
   padding: 10px 20px;
-  margin: 0px 15px;
+  margin: 15px;
   border-radius: 20px;
   border-color: #FFF1E0;
   border-style: outset;
 }
-
-.button-pink:hover {
+.datos-contacto fieldset form .btn-formulario .button-pink:hover {
   color: #6d3cc3;
   background-color: #FFF1E0;
 }
@@ -121,47 +117,40 @@ fieldset form p {
   margin: 0;
   width: 100%;
 }
-
-.row {
+.container .row {
   margin: 0;
 }
-
-.titulo-central {
+.container .titulo-central {
   display: flex;
   justify-content: space-evenly;
 }
-
-.titulo-texto {
+.container .titulo-central .titulo-texto {
   flex-direction: column;
 }
-
-.titulo--wapp {
+.container .titulo--wapp {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   border: 3px solid #FFF1E0;
 }
-
-.titulo-turnos {
+.container .titulo-turnos {
   margin: 30px;
   padding-right: 0;
+}
+.container aside {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.container aside iframe {
+  margin: 20px;
 }
 
 .page__bottom {
   background-color: #FFF1E0;
   color: #442679;
   text-align: center;
-}
-
-iframe {
-  margin: 20px;
-}
-
-aside {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
 }
 
 .tratamientos {
@@ -173,8 +162,7 @@ aside {
   margin: 50px;
   padding-left: 0;
 }
-
-.card {
+.tratamientos .card {
   width: 100%;
   display: flex;
   flex-direction: row;
@@ -183,20 +171,17 @@ aside {
   color: #442679;
   box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
 }
-
-.card__text {
+.tratamientos .card .card__text {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   padding: 20px 20px;
 }
-
-.card__text h2 {
+.tratamientos .card .card__text h2 {
   margin: 10px 10px;
   font-size: 200%;
 }
-
-.card__text p {
+.tratamientos .card .card__text p {
   margin: 15px 10px;
   font-size: 100%;
 }
@@ -244,10 +229,14 @@ header .header__logo h2 {
 
 body {
   background-color: #6d3cc3;
-  color: #fffeff;
+  color: #FFF1E0;
   font-family: "DM Sans", sans-serif;
 }
-body p, body h1, body h2 {
+body p, body h2 {
+  margin: 10px 20px;
+}
+body h1 {
+  font-family: "Donegal One", serif;
   margin: 10px 20px;
 }
 
@@ -255,7 +244,7 @@ footer {
   background-color: #6d3cc3;
   position: relative;
   bottom: 0;
-  border-top: 1px solid #9258f7;
+  border-top: 1px solid #6d3cc3;
 }
 footer ul {
   display: flex;
@@ -287,7 +276,7 @@ footer ul li {
     font-size: 20px;
   }
   /*tratamientos*/
-  .card {
+  .tratamientos .card {
     flex-direction: column;
   }
   /*contacto*/
@@ -300,25 +289,29 @@ footer ul li {
     margin: 10px 10px;
   }
   /*pedir un turno*/
-  .titulo-central {
+  .container .titulo-central {
     flex-direction: column;
     align-items: center;
     width: 90%;
   }
-  .ubicacion {
-    width: 90%;
-  }
-  .titulo-texto {
+  .container .titulo-central .titulo-texto {
     padding-right: 0;
     padding-left: 0;
   }
-  aside {
+  .container .ubicacion {
+    width: 90%;
+    margin: 20px;
+  }
+  .container aside {
     padding: 0;
   }
-  .titulo--wapp {
+  .container .titulo--wapp {
     width: 80%;
   }
-  .titulo-turnos {
+  .container .titulo--wapp a {
+    padding: 20px;
+  }
+  .container .titulo-turnos {
     width: 80%;
   }
   /*footer*/
