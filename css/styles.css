@@ -217,6 +217,16 @@ fieldset form p {
 
 /* Página: Pedir un turno */
 
+.container  {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+
+.row {
+    margin: 0;
+}
+
 .titulo-central{
     display:flex;
     justify-content: space-evenly;
@@ -237,12 +247,9 @@ fieldset form p {
     
 }
 
-.ubicacion {
-    margin: 50px; 
-}
-
-.ubicacion h3 {
-    margin: 50px;
+.titulo-turnos {
+    margin: 30px;
+    padding-right: 0;
 }
 
 .page__bottom {
@@ -250,6 +257,16 @@ fieldset form p {
     color:#442679;
     text-align: center;
 } 
+
+iframe {
+    margin: 20px;
+}
+
+aside {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
 /* Página: Tratamientos */
 
@@ -260,11 +277,13 @@ fieldset form p {
     grid-row-gap: 50px;
     justify-items: center; 
     margin: 50px;
+    padding-left: 0;
 
 }
 
 
 .card {
+    width: 100%;
     display:flex;
     flex-direction: row;
     justify-content: space-evenly;
@@ -347,9 +366,29 @@ fieldset form p {
     .titulo-central {
         flex-direction: column;
         align-items: center;
+        width: 90%;
     }
 
+    .ubicacion {
+        width: 90%;
+    }
+
+
+    .titulo-texto {
+        padding-right: 0;
+        padding-left: 0;
+    }
+
+    aside {
+        padding: 0;
+    }
+
+
     .titulo--wapp {
+        width: 80%;
+    }
+
+    .titulo-turnos {
         width: 80%;
     }
 
