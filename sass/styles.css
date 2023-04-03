@@ -58,6 +58,10 @@
 }
 .section-container .section__img .img-medium {
   margin: 10px 20px;
+  transition: all 0.5s;
+}
+.section-container .section__img .img-medium:hover {
+  transform: scale(1.07);
 }
 
 .title--center {
@@ -172,6 +176,10 @@
   background-color: #FFF1E0;
   color: #6d3cc3;
   box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  transition: 0.5s ease all;
+}
+.tratamientos .card:hover {
+  transform: scale(1.07);
 }
 .tratamientos .card .card__text {
   display: flex;
@@ -230,7 +238,7 @@ header .header__logo h2 {
 }
 
 body {
-  background-color: #6d3cc3;
+  background: linear-gradient(120deg, rgb(109, 60, 195) 20%, rgb(108, 31, 196) 59%, rgb(148, 5, 172) 75%, rgb(196, 0, 255) 85%, rgb(196, 0, 255) 100%);
   color: #FFF1E0;
   font-family: "DM Sans", sans-serif;
 }
@@ -243,14 +251,15 @@ body h1 {
 }
 
 footer {
-  background-color: #6d3cc3;
+  background: linear-gradient(120deg, rgb(109, 60, 195) 25%, rgb(108, 31, 196) 40%, rgb(148, 5, 172) 50%, rgb(196, 0, 255) 75%, rgb(196, 0, 255) 100%);
   position: relative;
   bottom: 0;
-  border-top: 1px solid #432874;
+  /* border-top: 1px solid #432874; */
 }
 footer ul {
   display: flex;
   justify-content: flex-end;
+  margin-bottom: 0;
 }
 footer ul li {
   margin: 10px 10px;
