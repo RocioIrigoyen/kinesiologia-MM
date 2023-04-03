@@ -186,6 +186,7 @@
   flex-direction: column;
   align-items: flex-start;
   padding: 20px 20px;
+  text-align: justify;
 }
 .tratamientos .card .card__text h2 {
   margin: 10px 10px;

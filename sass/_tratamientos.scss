@@ -24,6 +24,7 @@
         .card__text {
             @include flex-column (flex-start);
             padding: 20px 20px;
+            text-align: justify;
             h2 {
                 margin: 10px 10px;
                 font-size: 200%;
