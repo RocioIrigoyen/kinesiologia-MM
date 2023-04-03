@@ -1,0 +1,9 @@
+
+//aplico mixin
+
+
+@mixin flex-column ($align) {
+    display:flex;
+    flex-direction: column;
+    align-items: $align;
+}

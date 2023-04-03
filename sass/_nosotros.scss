@@ -1,3 +1,4 @@
+@import "mixins";
 
 .article-container {
     display: flex;
@@ -17,14 +18,14 @@
     justify-content: space-around;
     margin: 30px;
     .section__img {
-        display: flex;
-        flex-direction: column;
+        @include flex-column (center);
         p {
             padding: 10px;
         }
         .img-medium {
             margin: 10px 20px;
         }
+
     }
 }
 

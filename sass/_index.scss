@@ -1,8 +1,7 @@
+@import "mixins";
 
 .home__container {
-    display:flex;
-    flex-direction: column;
-    align-items: center;
+   @include flex-column (center);
     .carousel {
         z-index: 0;
     }
@@ -14,7 +13,7 @@
         margin-top: 10px;
     }
     .titulo-home {
-        @extend .texto-home;
+        @extend .texto-home;  //aplico extend
         font-family: 'Donegal One', serif;
     }
 }
@@ -27,9 +26,7 @@
     justify-items: center; 
     margin: 50px 50px;
     .icon__item {
-        display: flex;
-        flex-direction:column;
-        align-items: center;
+        @include flex-column (center);
         text-align: center;
     }
 }

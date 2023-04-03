@@ -1,20 +1,17 @@
-
+@import "mixins";
 
 .datos-contacto {
-    margin: 20px 20px;
     width: 100%;
     display: flex;
     justify-content: space-evenly;
     fieldset {
-        display:flex;
-        flex-direction: column;
+        @include flex-column (center);
         padding: 20px 20px;
         background-color: #442679;
         border: 1px solid;
         border-radius: 20px;
         form {
-            display: flex;
-            flex-direction: column;
+            @include flex-column (stretch);
             justify-content: space-between;
             padding: 0 20px;
             label {
