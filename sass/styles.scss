@@ -141,6 +141,14 @@ footer {
         margin: 0px;
     }
 
+    .datos-contacto fieldset {
+        width: 90%;
+    }
+
+    .datos-contacto fieldset form {
+        width: 90%;
+    }
+
     .datos-contacto img {
         width: 80%;
         margin: 10px 10px;
@@ -154,6 +162,7 @@ footer {
         flex-direction: column;
         align-items: center;
         width: 90%;
+        text-align: center;
     }
 
     .container .titulo-central .titulo-texto {

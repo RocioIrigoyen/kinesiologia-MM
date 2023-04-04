@@ -143,6 +143,7 @@
 .container .titulo-turnos {
   margin: 30px;
   padding-right: 0;
+  text-align: center;
 }
 .container aside {
   display: flex;
@@ -172,7 +173,7 @@
   width: 100%;
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
+  justify-content: flex-start;
   background-color: #FFF1E0;
   color: #6d3cc3;
   box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
@@ -297,6 +298,12 @@ footer ul li {
     align-items: center;
     margin: 0px;
   }
+  .datos-contacto fieldset {
+    width: 90%;
+  }
+  .datos-contacto fieldset form {
+    width: 90%;
+  }
   .datos-contacto img {
     width: 80%;
     margin: 10px 10px;
@@ -306,6 +313,7 @@ footer ul li {
     flex-direction: column;
     align-items: center;
     width: 90%;
+    text-align: center;
   }
   .container .titulo-central .titulo-texto {
     padding-right: 0;
