@@ -81,7 +81,6 @@ footer {
     background: linear-gradient(120deg, rgba(109,60,195,1) 25%, rgba(108,31,196,1) 40%, rgba(148,5,172,1) 50%, rgba(196,0,255,1) 75%, rgba(196,0,255,1) 100%);
     position: relative;
     bottom: 0;
-    /* border-top: 1px solid #432874; */
     ul {
         display: flex;
         justify-content: flex-end;
@@ -178,6 +177,10 @@ footer {
 
     .container aside {
         padding: 0;
+    }
+
+    .container aside iframe {
+        width: 90%;
     }
 
     .container .titulo--wapp {
