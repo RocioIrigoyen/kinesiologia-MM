@@ -269,6 +269,44 @@ footer ul li {
 
 /* Media queries */
 /* -Tablet */
+@media only screen and (min-width: 576px) and (max-width: 768px) {
+  .button-white {
+    width: 30%;
+  }
+  /* Quiénes somos */
+  .section-container {
+    flex-wrap: wrap;
+  }
+  /* Tratamientos */
+  .tratamientos {
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 20px;
+  }
+  .tratamientos .card {
+    flex-direction: column;
+  }
+  .tratamientos .card .card__text h2 {
+    font-size: 25px;
+    width: 95%;
+    text-align: start;
+  }
+  /* Contacto */
+  .datos-contacto {
+    flex-direction: column;
+    align-items: center;
+    margin: 0px;
+  }
+  .datos-contacto fieldset {
+    width: 90%;
+  }
+  .datos-contacto fieldset form {
+    width: 90%;
+  }
+  .datos-contacto img {
+    width: 80%;
+    margin: 10px 10px;
+  }
+}
 /* -Mobile */
 @media only screen and (max-width: 576px) {
   .button-white {
@@ -340,5 +378,38 @@ footer ul li {
   /*footer*/
   footer ul {
     justify-content: center;
+  }
+}
+/* -Mobile extra small */
+@media only screen and (max-width: 425px) {
+  /* estilos generales */
+  header {
+    width: 100%;
+  }
+  footer ul {
+    flex-wrap: wrap;
+  }
+  /* index */
+  .icon__container {
+    margin: 0;
+  }
+  .icon__container .icon__item {
+    padding: 10px;
+  }
+  /* pedir turno */
+  .container .titulo-central {
+    margin: 0;
+  }
+  .container .titulo--wapp a {
+    padding: 10px;
+  }
+  /* Quiénes somos */
+  .section-container .section__img .img-medium {
+    width: 90%;
+  }
+  /* Tratamientos */
+  .tratamientos .card .card__text h2 {
+    font-size: 25px;
+    width: 95%;
   }
 }/*# sourceMappingURL=styles.css.map */
